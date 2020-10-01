@@ -9,173 +9,196 @@
 </head>
 <body>
     
-    <div class="min-h-screen bg-gray-400 flex">
-        <div class="justify-center flex w-2/12 bg-white">
-            <div class="pt-5 pb-4 overflow-y-auto">
-                <div class="flex items-center flex-shrink-0 px-4">
-                    <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-logo-on-white.svg" alt="Workflow">
+    <div class="h-screen flex overflow-hidden bg-white">
+        <div class="flex flex-shrink-0">
+            <div class="flex flex-col w-64 border-r border-gray-200 pt-5 pb-4 bg-gray-100">
+                <div class="flex items-center flex-shrink-0 px-6">
+                    <img class="h-8 w-auto" src="assets/images/scram.png" alt="scram">
                 </div>
-                <div class="mt-5 flex-grow flex flex-col">
-                    <nav class="flex-1 px-2 bg-white space-y-1">
-                        <a href="index.html" class="group flex items-center px-2 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900
-                        hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition ease-in-out duration-150">
-                            <svg class="mr-3 h-6 w-6 text-gray-500 group-hover:text-gray-500 group-focus:text-gray-600 transition ease-in-out duration-150"
-                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                            </svg>
-                            Dashboard
-                        </a>
-                        <a href="enrollment.html" class="group flex items-center px-2 py-2 text-sm leading-5 font-medium text-gray-900 rounded-md bg-gray-100 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:bg-gray-200 transition ease-in-out duration-150">
-                            <svg class="mr-3 h-6 w-6 text-gray-400 group-hover:text-gray-500 group-focus:text-gray-500 transition ease-in-out duration-150"
-                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
-                            </svg>
-                            Enroll
-                        </a>
-                    </nav>
+                <div class="h-0 flex-1 flex flex-col overflow-y-auto">
+                    <div class="px-3 mt-6 relative inline-block text-left">
+                        <nav class="px-3 mt-6">
+                            <div class="space-y-1">
+                                <a href="index.html" class="group flex items-center px-2 py-2 text-sm leading-5 font-medium rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-50 transition ease-in-out duration-150">
+                                    <svg class="mr-3 h-6 w-6 text-gray-500 group-hover:text-gray-500 group-focus:text-gray-600 transition ease-in-out duration-150"
+                                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                                    </svg>
+                                    Dashboard
+                                </a>
+    
+                                <a href="enrollment.html" class="group flex items-center px-2 py-2 text-sm leading-5 font-medium rounded-md text-gray-900 bg-gray-200 focus:outline-none focus:bg-gray-50 transition ease-in-out duration-150">
+                                    <svg class="mr-3 h-6 w-6 text-gray-400 group-hover:text-gray-500 group-focus:text-gray-500 transition ease-in-out duration-150"
+                                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                                    </svg>
+                                    Enroll
+                                </a>
+                            </div>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="relative w-0 flex-1">
-            <div class="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
-                <div class="max-w-xl w-full">
-                    <div>
-                        <img class="mx-auto h-12 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-on-white.svg" alt="Workflow">
-                        <h2 class="mt-6 text-center text-3xl leading-9 font-extrabold text-gray-900">
+    
+        <div class="flex flex-col w-0 flex-1 overflow-hidden">
+            <main class="flex-1 relative z-0 overflow-y-auto focus:outline-none" tabindex="0">
+                <!-- Page title & actions -->
+                <div class="border-b border-gray-200 px-4 py-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8">
+                    <div class="flex-1 min-w-0">
+                        <h1 class="text-lg font-medium leading-6 text-gray-900 sm:truncate">
                             Welcome to Enrollment
-                        </h2>
-                        <p class="mt-2 text-center text-sm leading-5 text-gray-600">
-                            Subhead line here about how the services are amazing etc more words for longer subhead woohoo yeaa boi
-                        </p>
+                        </h1>
                     </div>
-            
-                    <form class="mt-8">
-                        <h2 class="text-2xl font-medium leading-8 text-gray-700 mb-3">1. Personal Information</h2>
-                        <div class="flex flex-wrap -mx-3 mb-6">
-                            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                                <label class="block text-sm font-medium leading-5 text-gray-700 mb-2" for="grid-first-name">
-                                    First Name
-                                </label>
-                                <input class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5"
-                                    id="grid-first-name" type="text" />
-                            </div>
-                            <div class="w-full md:w-1/2 px-3">
-                                <label class="block text-sm font-medium leading-5 text-gray-700 mb-2" for="grid-last-name">
-                                    Last Name
-                                </label>
-                                <input class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5"
-                                    id="grid-last-name" type="text" />
-                            </div>
-                        </div>
-            
-                        <div class="flex flex-wrap -mx-3 mb-12">
-                            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                                <label class="block text-sm font-medium leading-5 text-gray-700 mb-2" for="grid-email">
-                                    Email
-                                </label>
-                                <input class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5"
-                                    id="grid-email" type="email" />
-                            </div>
-                            <div class="w-full md:w-1/2 px-3">
-                                <label class="block text-sm font-medium leading-5 text-gray-700 mb-2" for="grid-password">
-                                    Password
-                                </label>
-                                <input class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5"
-                                    id="grid-password" type="Password" />
-                            </div>
-                        </div>
-
-                        <h2 class="text-2xl font-medium leading-8 text-gray-700 mb-3">2. Case Information</h2>
-                        <div class="flex flex-wrap -mx-3 mb-6">
-                            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                                <label class="block text-sm font-medium leading-5 text-gray-700 mb-2" for="grid-first-name">
-                                    First Name
-                                </label>
-                                <input class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5"
-                                    id="grid-first-name" type="text" />
-                            </div>
-                            <div class="w-full md:w-1/2 px-3">
-                                <label class="block text-sm font-medium leading-5 text-gray-700 mb-2" for="grid-last-name">
-                                    Last Name
-                                </label>
-                                <input class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5"
-                                    id="grid-last-name" type="text" />
-                            </div>
-                        </div>
-                        
-                        <div class="flex flex-wrap -mx-3 mb-12">
-                            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                                <label class="block text-sm font-medium leading-5 text-gray-700 mb-2" for="grid-email">
-                                    Email
-                                </label>
-                                <input class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5"
-                                    id="grid-email" type="email" />
-                            </div>
-                            <div class="w-full md:w-1/2 px-3">
-                                <label class="block text-sm font-medium leading-5 text-gray-700 mb-2" for="grid-password">
-                                    Password
-                                </label>
-                                <input class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5"
-                                    id="grid-password" type="Password" />
-                            </div>
-                        </div>
-
-                        <h2 class="text-2xl font-medium leading-8 text-gray-700 mb-3">3. ID Verification</h2>
-                        <div class="w-full mb-12">
-                            <button type="submit" class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition duration-150 ease-in-out">
-                                Upload ID here
-                            </button>
-                        </div>
-
-                        <h2 class="text-2xl font-medium leading-8 text-gray-700 mb-3">4. Consent &amp; Agreements</h2>
-                        <div class="text-sm font-medium w-full p-3 text-gray-700 bg-gray-300 rounded mb-6">
-                            <p class="mb-3">The Website Name website located at Website.com is a copyrighted work belonging to Website Name. Certain features of
-                            the Site may be subject to additional guidelines, terms, or rules, which will be posted on the Site in connection with
-                            such features.</p>
-                            
-                            <p class="mb-3">All such additional terms, guidelines, and rules are incorporated by reference into these Terms.</p>
-                            
-                            <p class="mb-3">These Terms of Use described the legally binding terms and conditions that oversee your use of the Site. BY LOGGING
-                            INTO THE SITE, YOU ARE BEING COMPLIANT THAT THESE TERMS and you represent that you have the authority and capacity to
-                            enter into these Terms. YOU SHOULD BE AT LEAST 18 YEARS OF AGE TO ACCESS THE SITE. IF YOU DISAGREE WITH ALL OF THE
-                            PROVISION OF THESE TERMS, DO NOT LOG INTO AND/OR USE THE SITE.</p>
-                            
-                            <p class="mb-3">These terms require the use of arbitration Section 10.2 on an individual basis to resolve disputes and also limit the
-                            remedies available to you in the event of a dispute.</p>
-                            
-                            <p>Accounts</p>
-                            <p class="mb-3">Account Creation. For you to use the Site, you have to start an account and provide information about yourself. You warrant that: (a) all required registration information you submit is truthful, up-to-date and accurate; (b) you will
-                            maintain the accuracy of such information. You may delete your Account at any time by following the instructions on the
-                            Site. Company may suspend or terminate your Account in accordance with Section.</p>
-                        </div>
-
-                        <div class="flex flex-wrap -mx-3 mb-6">
-                            <div class="flex px-3">
-                                <input type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out">
-                                <label class="ml-2 block text-xs leading-5 text-gray-900">
-                                    I agree to the above conditions
-                                </label>
-                            </div>
-                        </div>
-
-                        <div class="flex flex-wrap -mx-3 mb-6">
-                            <div class="flex px-3">
-                                <input type="checkbox" class="form-checkbox h-5 w-5 text-indigo-600 transition duration-150 ease-in-out">
-                                <label class="ml-2 block text-xs leading-5 text-gray-900">
-                                    I agree to other options available to me and surrender all rights to SafeJustice.com for this service provided herenth
-                                </label>
-                            </div>
-                        </div>
-            
-                        <div class="w-full">
-                            <button type="submit" class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition duration-150 ease-in-out">
-                                Enroll
-                            </button>
-                        </div>
-                    </form>
                 </div>
-            </div>
+    
+                <div class="mt-10">
+                    <div class="px-4 mt-6 sm:px-6 lg:px-8">
+                        <h2 class="text-gray-500 text-xs font-medium uppercase tracking-wide">Subhead line here about how the services are amazing etc more words for longer subhead woohoo yeaa boi</h2>
+                    </div>
+                    <div class="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+                        <div class="max-w-xl w-full">
+                            <form class="mt-8">
+                                <h2 class="text-2xl font-medium leading-8 text-gray-700 mb-3">1. Personal Information</h2>
+                                <div class="flex flex-wrap -mx-3 mb-6">
+                                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                                        <label class="block text-sm font-medium leading-5 text-gray-700 mb-2" for="grid-first-name">
+                                            First Name
+                                        </label>
+                                        <input class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5"
+                                            id="grid-first-name" type="text" />
+                                    </div>
+                                    <div class="w-full md:w-1/2 px-3">
+                                        <label class="block text-sm font-medium leading-5 text-gray-700 mb-2" for="grid-last-name">
+                                            Last Name
+                                        </label>
+                                        <input class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5"
+                                            id="grid-last-name" type="text" />
+                                    </div>
+                                </div>
+                    
+                                <div class="flex flex-wrap -mx-3 mb-12">
+                                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                                        <label class="block text-sm font-medium leading-5 text-gray-700 mb-2" for="grid-email">
+                                            Email
+                                        </label>
+                                        <input class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5"
+                                            id="grid-email" type="email" />
+                                    </div>
+                                    <div class="w-full md:w-1/2 px-3">
+                                        <label class="block text-sm font-medium leading-5 text-gray-700 mb-2" for="grid-password">
+                                            Password
+                                        </label>
+                                        <input class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5"
+                                            id="grid-password" type="Password" />
+                                    </div>
+                                </div>
+                    
+                                <h2 class="text-2xl font-medium leading-8 text-gray-700 mb-3">2. Case Information</h2>
+                                <div class="flex flex-wrap -mx-3 mb-6">
+                                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                                        <label class="block text-sm font-medium leading-5 text-gray-700 mb-2" for="grid-first-name">
+                                            First Name
+                                        </label>
+                                        <input class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5"
+                                            id="grid-first-name" type="text" />
+                                    </div>
+                                    <div class="w-full md:w-1/2 px-3">
+                                        <label class="block text-sm font-medium leading-5 text-gray-700 mb-2" for="grid-last-name">
+                                            Last Name
+                                        </label>
+                                        <input class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5"
+                                            id="grid-last-name" type="text" />
+                                    </div>
+                                </div>
+                    
+                                <div class="flex flex-wrap -mx-3 mb-12">
+                                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                                        <label class="block text-sm font-medium leading-5 text-gray-700 mb-2" for="grid-email">
+                                            Email
+                                        </label>
+                                        <input class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5"
+                                            id="grid-email" type="email" />
+                                    </div>
+                                    <div class="w-full md:w-1/2 px-3">
+                                        <label class="block text-sm font-medium leading-5 text-gray-700 mb-2" for="grid-password">
+                                            Password
+                                        </label>
+                                        <input class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5"
+                                            id="grid-password" type="Password" />
+                                    </div>
+                                </div>
+                    
+                                <h2 class="text-2xl font-medium leading-8 text-gray-700 mb-3">3. ID Verification</h2>
+                                <div class="w-full mb-12">
+                                    <button type="submit" class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition duration-150 ease-in-out">
+                                        Upload ID here
+                                    </button>
+                                </div>
+                    
+                                <h2 class="text-2xl font-medium leading-8 text-gray-700 mb-3">4. Consent &amp; Agreements</h2>
+                                <div class="text-sm font-medium w-full p-3 text-gray-700 bg-gray-100 rounded mb-6">
+                                    <p class="mb-3">The Website Name website located at Website.com is a copyrighted work belonging to
+                                        Website Name. Certain features of
+                                        the Site may be subject to additional guidelines, terms, or rules, which will be posted on the Site
+                                        in connection with
+                                        such features.</p>
+                    
+                                    <p class="mb-3">All such additional terms, guidelines, and rules are incorporated by reference into
+                                        these Terms.</p>
+                    
+                                    <p class="mb-3">These Terms of Use described the legally binding terms and conditions that oversee your
+                                        use of the Site. BY LOGGING
+                                        INTO THE SITE, YOU ARE BEING COMPLIANT THAT THESE TERMS and you represent that you have the
+                                        authority and capacity to
+                                        enter into these Terms. YOU SHOULD BE AT LEAST 18 YEARS OF AGE TO ACCESS THE SITE. IF YOU DISAGREE
+                                        WITH ALL OF THE
+                                        PROVISION OF THESE TERMS, DO NOT LOG INTO AND/OR USE THE SITE.</p>
+                    
+                                    <p class="mb-3">These terms require the use of arbitration Section 10.2 on an individual basis to
+                                        resolve disputes and also limit the
+                                        remedies available to you in the event of a dispute.</p>
+                    
+                                    <p>Accounts</p>
+                                    <p class="mb-3">Account Creation. For you to use the Site, you have to start an account and provide
+                                        information about yourself. You warrant that: (a) all required registration information you submit
+                                        is truthful, up-to-date and accurate; (b) you will
+                                        maintain the accuracy of such information. You may delete your Account at any time by following the
+                                        instructions on the
+                                        Site. Company may suspend or terminate your Account in accordance with Section.</p>
+                                </div>
+                    
+                                <div class="flex flex-wrap -mx-3 mb-6">
+                                    <div class="flex px-3">
+                                        <input type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out">
+                                        <label class="ml-2 block text-xs leading-5 text-gray-900">
+                                            I agree to the above conditions
+                                        </label>
+                                    </div>
+                                </div>
+                    
+                                <div class="flex flex-wrap -mx-3 mb-6">
+                                    <div class="flex px-3">
+                                        <input type="checkbox" class="form-checkbox h-5 w-5 text-indigo-600 transition duration-150 ease-in-out">
+                                        <label class="ml-2 block text-xs leading-5 text-gray-900">
+                                            I agree to other options available to me and surrender all rights to SafeJustice.com for this
+                                            service provided herenth
+                                        </label>
+                                    </div>
+                                </div>
+                    
+                                <div class="w-full">
+                                    <button type="submit" class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition duration-150 ease-in-out">
+                                        Enroll
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </main>
         </div>
     </div>
+
 </body>
 </html>
