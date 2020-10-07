@@ -3,6 +3,7 @@
 } */
 #cf7_controls span img {
     opacity: .5;
+    position: relative;
 }
 #cf7_controls span.selected img {
     opacity: 1;
