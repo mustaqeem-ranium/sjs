@@ -11,6 +11,14 @@ img.opaque {
   background-color: #015983 !important;
 }
 
+.border-primary {
+  border-color: #015983 !important;
+}
+
+.text-primary {
+  color: #015983 !important;
+}
+
 .translate-y-15 {
   transform: translateY(15%);
   -webkit-transform: translateY(15%);
