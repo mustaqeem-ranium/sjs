@@ -11,6 +11,12 @@ img.opaque {
   background-color: #015983 !important;
 }
 
+.translate-y-15 {
+  transform: translateY(15%);
+  -webkit-transform: translateY(15%);
+  -moz-transform: translateY(15%);
+}
+
 @media screen and (max-width: 767px) {
   .mobile-menu {
     top: 0;
