@@ -24,5 +24,15 @@ $(document).ready(function () {
         $("#cf7_controls span").removeClass("selected");
         $(this).addClass("selected");
     });
+
+    // Show Shipping Address Fields
+    $(".shipping-address").hide();
+    $(".shipping-checked").click(function() {
+      if ($(this).is(":checked")) {
+        $(".shipping-address").hide();
+      } else {
+        $(".shipping-address").show();
+      }
+    });
     
 });
