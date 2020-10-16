@@ -28,11 +28,24 @@ $(document).ready(function () {
     // Show Shipping Address Fields
     $(".shipping-address").hide();
     $(".shipping-checked").click(function() {
-      if ($(this).is(":checked")) {
-        $(".shipping-address").hide();
-      } else {
-        $(".shipping-address").show();
-      }
+        if ($(this).is(":checked")) {
+            $(".shipping-address").hide();
+        } else {
+            $(".shipping-address").show();
+        }
+    });
+
+    // Show estimated monitoring other value
+    $("#other-monitoring-period").hide();
+    $('#grid-monitoring-period').on('change', function() {
+        if ( this.value == 'other') {
+            $(this).removeClass('w-full');
+            $(this).addClass('w-1/2');
+            $("#other-monitoring-period").show();
+        } else {
+            $(this).addClass('w-full');
+            $("#other-monitoring-period").hide();
+        }
     });
     
 });
