@@ -50,3 +50,7 @@ img.opaque {
   visibility: visible;
 }
 
+.mt-3px {
+  margin-top: 3px;
+}
+
