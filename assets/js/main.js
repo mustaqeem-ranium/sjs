@@ -47,5 +47,13 @@ $(document).ready(function () {
             $("#other-monitoring-period").hide();
         }
     });
+
+    // Order details popup
+    $('.modal-link').click(function () {
+        $('.order-modal').show();
+    });
+    $('.order-modal .close').click(function () {
+        $('.order-modal').hide();
+    });
     
 });
