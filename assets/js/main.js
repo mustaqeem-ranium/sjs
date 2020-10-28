@@ -55,5 +55,19 @@ $(document).ready(function () {
     $('.order-modal .close').click(function () {
         $('.order-modal').hide();
     });
+
+    // Show Add Document
+    $(".add-document").hide();
+    $(".show-other").hide();
+    $(".show-document").click(function () {
+        $('.add-document').show();
+    });
+    $('.document-list').on('change', function () {
+        if (this.value == 'other') {
+            $(".show-other").show();
+        } else {
+            $(".show-other").hide();
+        }
+    });
     
 });
