@@ -49,11 +49,24 @@ $(document).ready(function () {
     });
 
     // Order details popup
-    $('.modal-link').click(function () {
+    $('.order-modal-link').click(function () {
         $('.order-modal').show();
     });
     $('.order-modal .close').click(function () {
         $('.order-modal').hide();
+    });
+
+    // Show order details when click on order number of order details popup
+    $(".flip").click(function () {
+        $(".panel").slideToggle("slow");
+    });
+
+    // Enrolment info popup
+    $(".enrolment-modal-link").click(function() {
+      $(".enrolment-modal").show();
+    });
+    $(".enrolment-modal .close").click(function() {
+      $(".enrolment-modal").hide();
     });
 
     // Show Add Document
