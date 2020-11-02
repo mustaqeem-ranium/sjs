@@ -56,11 +56,6 @@ $(document).ready(function () {
         $('.order-modal').hide();
     });
 
-    // Show order details when click on order number of order details popup
-    $(".flip").click(function () {
-        $(".panel").slideToggle("slow");
-    });
-
     // Enrolment info popup
     $(".enrolment-modal-link").click(function() {
       $(".enrolment-modal").show();
@@ -68,6 +63,11 @@ $(document).ready(function () {
     $(".enrolment-modal .close").click(function() {
       $(".enrolment-modal").hide();
     });*/
+    
+    // Show order details when click on order number of order details popup
+    $(".flip").click(function () {
+        $(".panel").slideToggle("slow");
+    });
 
     // Show Add Document
     $(".add-document").hide();
