@@ -49,7 +49,7 @@ $(document).ready(function () {
     });
 
     // Order details popup
-    $('.order-modal-link').click(function () {
+    /*$('.order-modal-link').click(function () {
         $('.order-modal').show();
     });
     $('.order-modal .close').click(function () {
@@ -67,7 +67,7 @@ $(document).ready(function () {
     });
     $(".enrolment-modal .close").click(function() {
       $(".enrolment-modal").hide();
-    });
+    });*/
 
     // Show Add Document
     $(".add-document").hide();
