@@ -112,10 +112,10 @@
                                 <div class="px-1 py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
                                     <div class="my-2 flex py-2 align-middle inline-block min-w-full">
                                         <div class="block w-full sm:w-1/2 md:w-2/3 lg:w-1/2 relative">
-                                            <select class="appearance-none h-full rounded border block appearance-none w-full bg-white border-gray-300 text-gray-700 py-2 px-4 pr-8 leading-tight focus:placeholder-gray-600 focus:text-gray-700 focus:outline-none">
-                                                <option>Select User</option>
-                                                <option>you@example.com</option>
-                                                <option>lorem@loremipsum.com</option>
+                                            <select class="appearance-none h-full rounded border block appearance-none w-full bg-white border-gray-300 text-gray-700 py-2 px-4 pr-8 leading-tight focus:placeholder-gray-600 focus:text-gray-700 focus:outline-none select-user">
+                                                <option value="0">Select User</option>
+                                                <option value="1">you@example.com</option>
+                                                <option value="2">lorem@loremipsum.com</option>
                                             </select>
                                             <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
                                                 <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -124,65 +124,90 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="bg-white shadow overflow-hidden rounded-md">
-                                        <ul>
-                                            <li>
-                                                <a href="#" class="block hover:bg-gray-50 focus:outline-none focus:bg-gray-50 transition duration-150 ease-in-out">
-                                                    <div class="px-4 py-4 sm:px-6">
-                                                        <div class="flex items-center">
-                                                            <svg class="mr-3 h-6 w-6 text-green-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                                                stroke="currentColor">
-                                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                                                            </svg>
-                                                            <div class="text-sm leading-5 font-medium text-primary">
-                                                                Installation Certificate
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="border-t border-gray-200">
-                                                <a href="#" class="block hover:bg-gray-50 focus:outline-none focus:bg-gray-50 transition duration-150 ease-in-out">
-                                                    <div class="px-4 py-4 sm:px-6">
-                                                        <div class="flex items-center">
-                                                            <svg class="mr-3 h-6 w-6 text-green-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                                                stroke="currentColor">
-                                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                                                            </svg>
-                                                            <div class="text-sm leading-5 font-medium text-primary">
-                                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="border-t border-gray-200">
-                                                <a href="#" class="block hover:bg-gray-50 focus:outline-none focus:bg-gray-50 transition duration-150 ease-in-out">
-                                                    <div class="px-4 py-4 sm:px-6">
-                                                        <div class="flex items-center">
-                                                            <svg class="mr-3 h-6 w-6 text-green-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                                                stroke="currentColor">
-                                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                                                            </svg>
-                                                            <div class="text-sm leading-5 font-medium text-primary">
-                                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
 
-                                    <div class="my-3 flex py-2 align-middle inline-block min-w-full">
-                                        <div class="block w-full sm:w-1/2 relative">
-                                            <button type="submit" class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-primary focus:outline-none transition duration-150 ease-in-out uppercase tracking-widest show-document">
-                                                Add Document
-                                            </button>
+                                    <div class="document-details">
+                                        <div class="bg-white shadow overflow-hidden rounded-md">
+                                            <ul>
+                                                <li>
+                                                    <a href="#" class="block hover:bg-gray-50 focus:outline-none focus:bg-gray-50 transition duration-150 ease-in-out">
+                                                        <div class="px-4 py-4 sm:px-6">
+                                                            <div class="flex items-center">
+                                                                <svg class="mr-3 h-6 w-6 text-green-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                                    stroke="currentColor">
+                                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                                                                </svg>
+                                                                <div class="text-sm leading-5 font-medium text-primary">
+                                                                    Installation Certificate
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="border-t border-gray-200">
+                                                    <a href="#" class="block hover:bg-gray-50 focus:outline-none focus:bg-gray-50 transition duration-150 ease-in-out">
+                                                        <div class="px-4 py-4 sm:px-6">
+                                                            <div class="flex items-center">
+                                                                <svg class="mr-3 h-6 w-6 text-green-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                                    stroke="currentColor">
+                                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                                                                </svg>
+                                                                <div class="text-sm leading-5 font-medium text-primary">
+                                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="border-t border-gray-200">
+                                                    <a href="#" class="block hover:bg-gray-50 focus:outline-none focus:bg-gray-50 transition duration-150 ease-in-out">
+                                                        <div class="px-4 py-4 sm:px-6">
+                                                            <div class="flex items-center">
+                                                                <svg class="mr-3 h-6 w-6 text-green-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                                    stroke="currentColor">
+                                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                                                                </svg>
+                                                                <div class="text-sm leading-5 font-medium text-primary">
+                                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="my-3 flex py-2 align-middle inline-block min-w-full border-t border-gray-200 pt-8 mt-8">
+                                            <div class="block w-full sm:w-1/2 relative">
+                                                <button type="submit" class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-primary focus:outline-none transition duration-150 ease-in-out uppercase tracking-widest show-document">
+                                                    Add Document
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
 
                                     <div class="add-document">
+                                        <div class="my-2 sm:flex py-2 align-middle inline-block min-w-full">
+                                            <div class="w-full space-y-1">
+                                                <div class="mt-2 border-2 border-gray-300 border-dashed rounded-md px-6 pt-5 pb-6 flex justify-center">
+                                                    <div class="text-center">
+                                                        <svg class="mx-auto h-12 w-12 text-gray-400" stroke="currentColor" fill="none" viewBox="0 0 48 48">
+                                                            <path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02"
+                                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                        <p class="mt-1 text-sm text-gray-600">
+                                                            <button class="font-medium text-primary focus:outline-none focus:underline transition duration-150 ease-in-out">
+                                                                Upload a file
+                                                            </button>
+                                                            or drag and drop
+                                                        </p>
+                                                        <p class="mt-1 text-xs text-gray-500">
+                                                            PNG, JPG, PDF up to 10MB
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                         <div class="my-2 sm:flex py-2 align-middle inline-block min-w-full">
                                             <div class="block w-full sm:w-1/2 relative">
                                                 <select class="appearance-none h-full rounded border block appearance-none w-full bg-white border-gray-300 text-gray-700 py-2 px-4 pr-8 leading-tight focus:placeholder-gray-600 focus:text-gray-700 focus:outline-none document-list">

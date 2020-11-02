@@ -63,10 +63,23 @@ $(document).ready(function () {
     $(".enrolment-modal .close").click(function() {
       $(".enrolment-modal").hide();
     });*/
-    
+
     // Show order details when click on order number of order details popup
     $(".flip").click(function () {
         $(".panel").slideToggle("slow");
+    });
+
+    // Show document details
+    $(".document-details").hide();
+    // $(".show-document").click(function () {
+    //     $('.add-document').show();
+    // });
+    $('.select-user').on('change', function () {
+        if (this.value != 0) {
+            $(".document-details").show();
+        } else {
+            $(".document-details").hide();
+        }
     });
 
     // Show Add Document
