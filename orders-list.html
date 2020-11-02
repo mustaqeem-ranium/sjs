@@ -280,7 +280,7 @@
                                                         </span>
                                                     </td>
                                                     <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
-                                                        <a href="#" title="Order Details" class="text-teal-400 inline-flex modal-link">
+                                                        <a href="#" title="Order Details" class="text-teal-400 inline-flex order-modal-link">
                                                             <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
@@ -312,7 +312,7 @@
                                                         </span>
                                                     </td>
                                                     <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
-                                                        <a href="#" title="Order Details" class="text-teal-400 inline-flex modal-link">
+                                                        <a href="#" title="Order Details" class="text-teal-400 inline-flex order-modal-link">
                                                             <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
                                                                 viewBox="0 0 24 24" stroke="currentColor">
                                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -395,31 +395,140 @@
                     </footer>
                 </main>
             </div>
-
+            
+            <!-- Order details modal -->
             <div class="order-modal hidden fixed z-10 inset-0 overflow-y-auto">
-                <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
-
+                <div class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+            
                     <div class="fixed inset-0 transition-opacity">
                         <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
                     </div>
-                    
-                    <span class="hidden sm:inline-block sm:align-middle sm:h-screen"></span>
-                    
-                    <div class="inline-block align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full sm:p-6" role="dialog" aria-modal="true" aria-labelledby="modal-headline">
-                        <div>
-                            <div class="mt-3 text-center sm:mt-5">
-                                <h3 class="text-lg leading-6 font-medium text-gray-900" id="modal-headline">
-                                    Order Details
-                                </h3>
-                                <div class="mt-2">
-                                    <p class="text-sm leading-5 text-gray-500">
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius aliquam laudantium explicabo
-                                        pariatur iste dolorem animi vitae error totam. At sapiente aliquam accusamus facere
-                                        veritatis.
-                                    </p>
+            
+                    <span class="hidden sm:inline-block sm:align-middle sm:h-scree"></span>
+            
+                    <div class="inline-block align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-l max-w-5xl w-full sm:p-6 relative"
+                        role="dialog" aria-modal="true" aria-labelledby="modal-headline">
+                        <button type="button" class="absolute top-0 right-0 w-12 inline-flex justify-center rounded-md p-2 bg-white text-base leading-6 font-medium focus:outline-none close">
+                            <svg class="h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </button>
+            
+                        <div class="px-4 mt-6 sm:px-6 lg:px-8">
+                            <div class="mb-8 bg-white shadow-lg overflow-hidden rounded-lg border border-gray-200">
+                                <div class="px-4 py-5 border-b border-gray-200 sm:px-6">
+                                    <h3 class="text-lg leading-6 font-medium text-gray-900">
+                                        Order Details
+                                    </h3>
+                                </div>
+                                <div>
+                                    <dl>
+                                        <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-4 sm:gap-4 sm:px-6">
+                                            <dt class="text-sm leading-5 font-medium text-gray-500">
+                                                Order Number
+                                            </dt>
+                                            <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-3">
+                                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-gray-200 text-gray-800 flip"><a
+                                                        href="#">#012345</a></span>
+                                                <div class="mt-4 flex flex-col hidden panel">
+                                                    <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+                                                        <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
+                                                            <div class="shadow overflow-hidden border border-gray-200 sm:rounded-lg">
+                                                                <table class="min-w-full divide-y divide-gray-200">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                                                                                Items
+                                                                            </th>
+                                                                            <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                                                                                Quantity
+                                                                            </th>
+                                                                            <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                                                                                Price
+                                                                            </th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody class="bg-white divide-y divide-gray-200">
+                                                                        <tr>
+                                                                            <td class="px-6 py-4 whitespace-no-wrap">
+                                                                                <div class="flex items-center">
+                                                                                    <div class="flex-shrink-0 h-10 w-10">
+                                                                                        <img class="h-10 w-10 rounded-full" src="assets/images/alcohol-testing.jpg"
+                                                                                            alt="">
+                                                                                    </div>
+                                                                                    <div class="ml-4">
+                                                                                        <div class="text-sm leading-5 font-medium text-gray-900">
+                                                                                            Alcohol Monitoring
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td class="px-6 py-4 whitespace-no-wrap">
+                                                                                <div class="text-sm leading-5 text-gray-900">1</div>
+                                                                            </td>
+                                                                            <td class="px-6 py-4 whitespace-no-wrap">
+                                                                                <div class="text-sm leading-5 text-gray-900">$350</div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="px-6 py-4 whitespace-no-wrap">
+                                                                                <div class="flex items-center">
+                                                                                    <div class="flex-shrink-0 h-10 w-10">
+                                                                                        <img class="h-10 w-10 rounded-full" src="assets/images/alcohol-testing.jpg"
+                                                                                            alt="">
+                                                                                    </div>
+                                                                                    <div class="ml-4">
+                                                                                        <div class="text-sm leading-5 font-medium text-gray-900">
+                                                                                            Drug Monitoring
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td class="px-6 py-4 whitespace-no-wrap">
+                                                                                <div class="text-sm leading-5 text-gray-900">1</div>
+                                                                            </td>
+                                                                            <td class="px-6 py-4 whitespace-no-wrap">
+                                                                                <div class="text-sm leading-5 text-gray-900">$350</div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </dd>
+                                        </div>
+                                        <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-4 sm:gap-4 sm:px-6">
+                                            <dt class="text-sm leading-5 font-medium text-gray-500">
+                                                Order Date
+                                            </dt>
+                                            <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-3">
+                                                MM/DD/YYYY
+                                            </dd>
+                                        </div>
+                                        <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-4 sm:gap-4 sm:px-6">
+                                            <dt class="text-sm leading-5 font-medium text-gray-500">
+                                                Total
+                                            </dt>
+                                            <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-3">
+                                                $1234
+                                            </dd>
+                                        </div>
+                                        <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-4 sm:gap-4 sm:px-6">
+                                            <dt class="text-sm leading-5 font-medium text-gray-500">
+                                                Status
+                                            </dt>
+                                            <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-3">
+                                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-200 text-yellow-800">Pending</span>
+                                            </dd>
+                                        </div>
+                                    </dl>
                                 </div>
                             </div>
                         </div>
+            
                         <div class="mt-5 sm:mt-6 sm:grid flex justify-center">
                             <span class="mt-3 rounded-md shadow-sm sm:mt-0 w-40">
                                 <button type="button" class="inline-flex justify-center w-full rounded-md border border-gray-300 px-4 py-2 bg-white text-base leading-6 font-medium text-gray-700 shadow-sm hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue transition ease-in-out duration-150 sm:text-sm sm:leading-5 close">
@@ -430,6 +539,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="assets/js/main.js"></script>
